@@ -1,0 +1,15 @@
+:root{--bg:#0b0f14;--panel:#1a1f25;--screen:#0e151c;--text:#e6e6e6;--accent:#c28b00}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0}
+body{font-family:Montserrat, sans-serif;background:radial-gradient(circle at 30% 20%, #1b1b1b 0%, #0a0a0a 60%), #0b0f14;color:var(--text)}
+.container{min-height:100%;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:40px}
+.screen{width:320px;height:80px;border-radius:12px;background:#111;box-shadow:0 8px 0 #000 inset, 0 6px 20px rgba(0,0,0,.5);color:#fff;font-family:Montserrat;font-size:40px;line-height:80px;text-align:right;padding:0 20px;margin-bottom:20px}
+.grid{width:320px;display:grid;grid-template-columns:repeat(4, 1fr);grid-gap:12px}
+.btn{height:68px;border-radius:10px;border:none;background:#2b2f34;color:#fff;font-family:Montserrat;font-size:24px;box-shadow:0 4px 0 rgba(0,0,0,.4);cursor:pointer}
+.btn.op{background:#373d44}
+.btn.equal{grid-column: span 2; background:#e08a00}
+.btn.clear{grid-column: span 2; background:#8a1b1b}
+@media (max-width: 420px){
+  .screen{width:100%;font-size:32px}
+  .grid{width:100%;grid-template-columns:repeat(4, 1fr)}
+}
